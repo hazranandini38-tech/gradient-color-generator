@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gradient Color Generator</title>
+
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gradient Generator</h1>
+
+        <p class="subtitle">
+            Create beautiful gradients instantly
+        </p>
+
+        <!-- Gradient Preview -->
+        <div class="preview" id="preview">
+            Your Gradient
+        </div>
+
+        <!-- Color Pickers -->
+        <div class="colors">
+
+            <div class="color-box">
+                <input type="color"
+                       id="firstcolor"
+                       value="#6a11cb">
+
+                <span id="colorcode1">
+                    #6A11CB
+                </span>
+            </div>
+
+            <div class="color-box">
+                <input type="color"
+                       id="secondcolor"
+                       value="#2575fc">
+
+                <span id="colorcode2">
+                    #2575FC
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Gradient Direction -->
+        <select class="direction" id="direction">
+
+            <option value="to right">
+                Left → Right
+            </option>
+
+            <option value="to left">
+                Right → Left
+            </option>
+
+            <option value="to bottom">
+                Top → Bottom
+            </option>
+
+            <option value="to top">
+                Bottom → Top
+            </option>
+
+            <option value="to bottom right">
+                Diagonal ↘
+            </option>
+
+            <option value="to top left">
+                Diagonal ↖
+            </option>
+
+        </select>
+
+        <!-- CSS Code -->
+        <div class="code" id="code">
+            linear-gradient(to right, #6A11CB, #2575FC)
+        </div>
+
+        <!-- Copy Button -->
+        <button onclick="copyCode()">
+            Copy CSS Code
+        </button>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
